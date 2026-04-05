@@ -1,0 +1,7 @@
+typescript is Superset of js
+it gives type safety
+
+
+npm init -y   ===> node project intilliation
+npm i -D typescript ==\> typeScript insatll in devDepency
+npx tsc --init   ==> typeScript project initiallation
