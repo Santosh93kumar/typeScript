@@ -5,3 +5,16 @@ it gives type safety
 npm init -y   ===> node project intilliation
 npm i -D typescript ==\> typeScript insatll in devDepency
 npx tsc --init   ==> typeScript project initiallation
+
+
+
+type inferencing 
+where the types is automatically decleared
+type annotation
+where we need to delare the type
+
+there are two type of error
+1. syntax error 2 type error
+
+
+unkonown is different fron any in call construct and access property
