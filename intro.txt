@@ -18,3 +18,30 @@ there are two type of error
 
 
 unkonown is different fron any in call construct and access property
+
+
+Use interface when:
+Working with objects
+Building APIs / classes
+Need extensibility / merging
+
+👉 Example: React props, backend models
+
+✅ Use type when:
+Need unions (|)
+Need tuples
+Need utility types
+Complex compositions
+
+
+//ops is ts is missing
+
+
+
+"Functions with void return type will always return undefined, so logging their result prints undefined.
+
+Feature	        ()Small Brackets	    {} Big Brackets
+Purpose	        Function	            Object
+Used for        Function type	        Object shape
+Example	        (x:number)=>number      {name:string}
+Inside interface Call signature	        Properties / index signature
