@@ -28,4 +28,18 @@ interface Box<T>{
 }
 
 const numberBox : Box<number> = { content:10}
+const numberBox2 : Box<boolean> = { content:true}
 const numberBox1 : Box<string> = { content:'hey how are you'}
+
+
+interface apiCall<T> {
+    status:number,
+    date:T
+}
+
+const res:apiCall<{flavour:string}>={
+    status:300,
+    date:{
+        flavour:'gh'
+    }
+}
