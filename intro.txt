@@ -45,3 +45,10 @@ Purpose	        Function	            Object
 Used for        Function type	        Object shape
 Example	        (x:number)=>number      {name:string}
 Inside interface Call signature	        Properties / index signature
+
+
+
+to install some library 
+npm i -D @types/lib-name 
+-D => common for dev depency
+@types => for it's types
