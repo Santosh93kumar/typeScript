@@ -1,5 +1,5 @@
 import axios from "axios";
-
+import type { AxiosResponse } from "axios";
 
 
 interface Geo {
@@ -30,6 +30,25 @@ interface User {
   phone: string;
   website: string;
   company: Company;
+}
+
+
+
+// axiosResponse is a good way to handle  since it give the suggestion
+const fecthData = async ()=>{
+    try {
+        let response:AxiosResponse<User[]>= await axios.get('https://jsonplaceholder.typicode.com/users');
+        console.log('console : ', response.data)
+        
+    } catch (error:any) {
+        if(axios.isAxiosError(error)){
+            console.log("Axios Errior : ", error.message)
+            if(error.response){
+                console.log(error.response.status)
+            }
+        }
+        
+    }
 }
 
 // axios.get('https://jsonplaceholder.typicode.com/users')
